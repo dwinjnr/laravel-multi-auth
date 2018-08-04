@@ -18,6 +18,19 @@ class LoginController extends Controller
     |
     */
 
+    /**
+     * Show the application's login form.
+     * 
+     * NOTE: Please comment/remove showLoginForm() in vendor\laravel\framework\src\Illuminate\Foundation\Auth\AuthenticatesUsers.php
+     *
+     * @return \Illuminate\Http\Response
+     */
+
+    public function showLoginForm()
+    {
+        return view('auth.login');
+    }
+
     use AuthenticatesUsers;
 
     /**
